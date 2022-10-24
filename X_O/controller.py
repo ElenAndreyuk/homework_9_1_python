@@ -1,6 +1,7 @@
 import view
 import model
 import emoji
+from playsound import playsound
 def button_click():
     val = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     game_over = False
@@ -22,3 +23,4 @@ def button_click():
 
     view.output_board(val)
     print(emoji.emojize(f":1st_place_medal: Победил {win}", language='en' ))
+    playsound('verdi_pobednyy_marsh.mp3')
